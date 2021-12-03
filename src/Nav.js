@@ -3,6 +3,7 @@ import "./styles/styles.scss"
 import Hero from "./Hero"
 import Alarmas from "./Alarmas"
 import Seguros from "./seguros"
+import Estribos from "./estribos"
 
 var checkm = 0
 const ct = "color 0.57s, top 0.57"
@@ -85,11 +86,26 @@ function Nav(){
     checkm = 0
   }
 
+  function estribos(){
+    for(var i in document.getElementsByClassName("menu")){
+      if(i <= document.getElementsByClassName("menu").length){
+        document.getElementsByClassName("menu")[i].style.top = "-75vh";
+        document.getElementsByClassName("menu")[i].style.transition = ct; 
+        document.getElementsByClassName("menu")[i].style.color = "transparent";
+        
+      }
+    }
+    setcont(<Estribos/>)
+    setcont(<Estribos/>)
+    document.getElementById("nav").style.height = "12vh";
+    checkm = 0
+  }
+
   useEffect(()=>{
     document.getElementById("logo").addEventListener("click",logo)
     document.getElementById("alarmas").addEventListener("click",alarmas)
     document.getElementById("seguros").addEventListener("click",seguros)
-    
+    document.getElementById("estribos").addEventListener("click",estribos)
     
   })
 

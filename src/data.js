@@ -30,6 +30,14 @@ export var data = {
         price:"$60",
     },
      
+    },
+
+    estribos:{
+         footrest:{
+         img:"https://5.imimg.com/data5/GV/OO/MY-22759652/car-side-foot-step-500x500.jpg",
+         name:"footrest-aluminium",
+         price:"$40",
+         }
     }
 }
 
