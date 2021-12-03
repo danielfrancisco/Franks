@@ -1,0 +1,90 @@
+@mixin noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+#nav{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    height: 12vh;
+    position: relative;
+    top: 0vh;
+    transition: height 0.57s;
+    font-size: large;
+    z-index: 1;
+    width: 110vw;
+}
+
+#logo{
+ font-size: larger;
+ font-family: Arial;
+ position: relative;
+ left: 40vw;
+ top: -2vh;
+ cursor: pointer;
+ width: 4.8vw;
+ @include noselect
+}
+
+#menubutton{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    position: relative;
+    @include noselect;
+    top: 4vh;
+    left: 4.8vw;
+    width: 3.49vw;
+}
+
+.menu{
+    width: 10vw;
+    position: relative;
+    font-family: Arial;
+    top: -75vh;
+    cursor: pointer;
+    @include noselect;
+    transition:  top 0.57s;
+    position: relative;
+    left: 4.9vw;
+}
+
+#alarmas{
+    width: 4.6vw;
+}
+
+#hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 0vh;
+    top: -2vh;
+    @include noselect
+}
+
+body{
+    margin: 0;
+}
+
+@media only screen and (max-width:500px) {
+    
+    .menu{
+        left: 15vw;
+        font-size: 2.8vh;
+        top: -75vh;
+    }
+
+    #hero{
+        width: 100vw;
+        height: 100vh;
+        left: 0vh;
+        top: 0vh;
+        
+    }
+}
