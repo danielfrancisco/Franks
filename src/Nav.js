@@ -16,7 +16,7 @@ function Nav(){
       for(var i in document.getElementsByClassName("menu")){
         if(i <= document.getElementsByClassName("menu").length){
           document.getElementsByClassName("menu")[i].style.top = "1vh";
-          document.getElementsByClassName("menu")[i].style.transition = ct;  
+          document.getElementsByClassName("menu")[i].style.transition = "color 0.57s, top 0s";  
           document.getElementsByClassName("menu")[i].style.color = "white";
             
         }
@@ -28,7 +28,7 @@ function Nav(){
       for(var j in document.getElementsByClassName("menu")){
         if(j <= document.getElementsByClassName("menu").length){
               document.getElementsByClassName("menu")[j].style.top = "-75vh";
-              document.getElementsByClassName("menu")[j].style.transition = "color 0.57s, top 0.57"; 
+              document.getElementsByClassName("menu")[j].style.transition = "color 0.57s, top 0.20"; 
               document.getElementsByClassName("menu")[j].style.color = "transparent";
                
               

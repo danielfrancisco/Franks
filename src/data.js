@@ -18,8 +18,15 @@ export var data = {
 },
 
     seguros:{
+
         car:{img:"https://m.media-amazon.com/images/I/41QN0GLpb8L.jpg",
-        name:"car door lock",
+        name:"Car door lock",
+        price:"$60",
+
+    },
+
+    cicisame:{img:"https://m.media-amazon.com/images/I/513kD9VYeZL._SL1100_.jpg",
+        name:"Cicisame",
         price:"$60",
     },
      
