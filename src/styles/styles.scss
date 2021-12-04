@@ -59,13 +59,28 @@
     width: 4.6vw;
 }
 
+
 #hero{
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     position: relative;
     left: 0vh;
-    top: -2vh;
-    @include noselect
+    top: -42vh;
+    @include noselect;
+    padding: 0;
+    
+}
+
+#herotex{
+    position: relative;
+    font-size: 4.5vw;
+    font-family: Arial;
+    color: white;
+    top: 35vh;
+    z-index: 1;
+    left: 52vw;
+    font-style: italic;
+    
 }
 
 body{
@@ -79,12 +94,24 @@ body{
         font-size: 2.8vh;
         top: -75vh;
     }
+   
+    #herotex{
+     font-size: 3.3vh;
+     left: 24vw;
+     top: 52vh;
+     color: white;
+     font-weight: 500;
+    }
 
     #hero{
         width: 100vw;
         height: 100vh;
         left: 0vh;
-        top: 0vh;
+        top: -15vh;
         
+    }
+
+    #bodyw{
+        overflow-y: hidden;
     }
 }

@@ -10,7 +10,6 @@ export var data = {
             name:"viper",
             price:"$55",
         },
-
         
 
         

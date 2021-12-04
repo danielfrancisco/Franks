@@ -61,9 +61,7 @@ useEffect(()=>{
    disi()
   }
 
-  
-  
-  })  
+})  
    
 return(
         <>

@@ -51,7 +51,8 @@ function Nav(){
             
       }
     }
-    setcont(<Hero/>)
+    document.getElementsByTagName("body")[0].style.overflowY="hidden";
+    setcont(<Hero id="herocom" />)
     document.getElementById("nav").style.height = "12vh";
     checkm = 0
   }
@@ -65,6 +66,7 @@ function Nav(){
         
       }
     }
+    document.getElementsByTagName("body")[0].style.overflowY="visible";
     setcont(<Alarmas/>)
     setcont(<Alarmas/>)
     document.getElementById("nav").style.height = "12vh";
@@ -80,6 +82,7 @@ function Nav(){
         
       }
     }
+    document.getElementsByTagName("body")[0].style.overflowY="visible";
     setcont(<Seguros/>)
     setcont(<Seguros/>)
     document.getElementById("nav").style.height = "12vh";
@@ -95,6 +98,7 @@ function Nav(){
         
       }
     }
+    document.getElementsByTagName("body")[0].style.overflowY="visible";
     setcont(<Estribos/>)
     setcont(<Estribos/>)
     document.getElementById("nav").style.height = "12vh";
@@ -102,12 +106,13 @@ function Nav(){
   }
 
   useEffect(()=>{
+    logo()
     document.getElementById("logo").addEventListener("click",logo)
     document.getElementById("alarmas").addEventListener("click",alarmas)
     document.getElementById("seguros").addEventListener("click",seguros)
     document.getElementById("estribos").addEventListener("click",estribos)
     
-  })
+  },[])
 
   return(
       <>
