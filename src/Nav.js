@@ -47,7 +47,7 @@ function Nav(){
         document.getElementsByClassName("menu")[i].style.top = "-75vh";
         document.getElementsByClassName("menu")[i].style.transition = ct;  
         document.getElementsByClassName("menu")[i].style.color = "transparent";
-          
+        
             
       }
     }
@@ -63,6 +63,7 @@ function Nav(){
         document.getElementsByClassName("menu")[i].style.top = "-75vh";
         document.getElementsByClassName("menu")[i].style.transition = ct; 
         document.getElementsByClassName("menu")[i].style.color = "transparent";
+        
         
       }
     }
@@ -111,6 +112,7 @@ function Nav(){
     document.getElementById("alarmas").addEventListener("click",alarmas)
     document.getElementById("seguros").addEventListener("click",seguros)
     document.getElementById("estribos").addEventListener("click",estribos)
+    
     
   },[])
 
