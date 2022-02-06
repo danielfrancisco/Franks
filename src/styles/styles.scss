@@ -62,25 +62,24 @@
 
 #hero{
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
     position: relative;
     left: 0vw;
     top: -42vh;
     @include noselect;
     padding: 0;
-    
+    filter: grayscale(100%);
 }
 
 #herotex{
     position: relative;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     font-family: Arial;
     color: white;
-    top: 35vh;
+    top: 57vh;
     z-index: 1;
-    left: 52vw;
+    left: 55vw;
     font-style: italic;
-    
 }
 
 body{
