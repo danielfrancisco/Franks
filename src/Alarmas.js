@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import "./styles/items.scss"
 import uuid from 'react-uuid';
-import {data} from "./data.js"
+import data from "./data.json"
 var cou = 0
 var alarl = []
 var alarr = []
