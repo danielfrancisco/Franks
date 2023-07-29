@@ -1,0 +1,126 @@
+#nav {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  height: 12vh;
+  position: relative;
+  top: 0vh;
+  transition: height 0.57s;
+  font-size: large;
+  z-index: 1;
+  width: 100vw;
+}
+
+#logo {
+  font-size: larger;
+  font-family: Arial;
+  position: relative;
+  left: 40vw;
+  top: -2vh;
+  cursor: pointer;
+  width: 4.8vw;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+#menubutton {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  position: relative;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none;
+  top: 4vh;
+  left: 4.8vw;
+  width: 3.49vw;
+}
+
+.menu {
+  width: 10vw;
+  position: relative;
+  font-family: Arial;
+  top: -75vh;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none;
+  transition: top 0.57s;
+  position: relative;
+  left: 4.9vw;
+}
+
+#alarmas {
+  width: 4.6vw;
+}
+
+#hero {
+  width: 100vw;
+  height: 140vh;
+  position: relative;
+  left: 0vw;
+  top: -42vh;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none;
+  padding: 0;
+  filter: grayscale(100%);
+}
+
+@keyframes headerAnimation {
+  from {
+    top: 10vh;
+    opacity: 0;
+  }
+  to {
+    top: 23vh;
+    opacity: 1;
+  }
+}
+#herotex {
+  position: relative;
+  font-size: 64.2px;
+  animation: headerAnimation 0.7s ease-in;
+  font-weight: bold;
+  font-family: Arial;
+  color: black;
+  top: 23vh;
+  z-index: 1;
+  left: 10vw;
+}
+
+body {
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    left: 15vw;
+    font-size: 2.8vh;
+    top: -75vh;
+  }
+  #herotex {
+    font-size: 3.3vh;
+    left: 41vw;
+    top: 45vh;
+    color: white;
+    font-weight: 500;
+    width: 57vw;
+  }
+  #hero {
+    width: 100vw;
+    height: 130vh;
+    left: 0vh;
+    top: -23vh;
+  }
+  #bodyw {
+    overflow-y: hidden;
+  }
+}/*# sourceMappingURL=styles.css.map */

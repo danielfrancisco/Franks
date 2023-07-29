@@ -1,0 +1,57 @@
+#leftc {
+  float: left;
+  width: 20vw;
+  position: relative;
+  top: 7.5vh;
+  left: 9vw;
+}
+#leftc img {
+  height: 40vh;
+  width: 20vw;
+  left: 9vw;
+}
+#leftc p {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+#rightc {
+  float: left;
+  width: 20vw;
+  position: relative;
+  top: 10vh;
+  left: 41vw;
+}
+#rightc img {
+  height: 40vh;
+  width: 20vw;
+}
+#rightc p {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  #leftc {
+    left: 24vw;
+    top: 0vh;
+  }
+  #leftc img {
+    height: 60vh;
+    width: 60vw;
+    left: 9vw;
+  }
+  #leftc p {
+    font-size: large;
+  }
+  #rightc {
+    top: 17vh;
+    float: none;
+    left: 10vw;
+    margin-bottom: 30vh;
+  }
+  #rightc img {
+    height: 20vh;
+    width: 40vh;
+  }
+}/*# sourceMappingURL=items.css.map */

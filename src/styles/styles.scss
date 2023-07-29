@@ -62,7 +62,7 @@
 
 #hero{
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
     position: relative;
     left: 0vw;
     top: -42vh;
@@ -71,15 +71,22 @@
     filter: grayscale(100%);
 }
 
+@keyframes headerAnimation {
+    from{top: 10vh; opacity: 0;}
+    to{top: 23vh; opacity: 1;}
+}
+
 #herotex{
     position: relative;
-    font-size: 3.5vw;
+    font-size: 64.2px;
+    animation: headerAnimation 0.7s ease-in;
+    font-weight: bold;
     font-family: Arial;
-    color: white;
-    top: 57vh;
+    color: black;
+    top: 23vh;
     z-index: 1;
-    left: 55vw;
-    font-style: italic;
+    left: 10vw;
+    
 }
 
 body{
@@ -106,7 +113,7 @@ body{
 
     #hero{
         width: 100vw;
-        height: 100vh;
+        height: 130vh;
         left: 0vh;
         top: -23vh;
         
